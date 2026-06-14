@@ -1,0 +1,298 @@
+ <!DOCTYPE html>
+ <html lang="zh-CN">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>麒麟 — 桔子树｜粉丝纪念站</title>
+ <link rel="stylesheet" href="css/style.css">
+ <script type="importmap">
+ {
+   "imports": {
+     "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+   }
+ }
+ </script>
+ </head>
+ <body>
+ <!-- Nav -->
+ <nav id="navbar">
+   <div class="nav-inner">
+     <a href="#hero" class="nav-logo">
+       <div class="nav-logo-img">麒</div>
+       <span class="nav-logo-text">麒麟<span class="nav-logo-highlight"> Kylin</span></span>
+     </a>
+     <ul class="nav-links">
+       <li><a href="#about">关于</a></li>
+       <li><a href="#characters">人物</a></li>
+       <li><a href="#timeline">时间线</a></li>
+       <li><a href="#ranks">军衔</a></li>
+       <li><a href="#achievements">事迹</a></li>
+       <li><a href="#gallery">图集</a></li>
+     </ul>
+     <button class="nav-toggle" aria-label="Menu">
+       <span></span><span></span><span></span>
+     </button>
+   </div>
+ </nav>
+
+ <!-- Hero -->
+ <section id="hero">
+   <div id="hero-canvas"></div>
+   <div class="hero-overlay"></div>
+   <div class="hero-content">
+     <div class="hero-badge">桔 子 树 原 著 · 军 旅 经 典</div>
+     <h1 class="hero-title">麒麟</h1>
+     <p class="hero-author">橘 子 树 · 小 说 <span style="color:#c9a84c;">Kylin</span></p>
+     <p class="hero-quote">"我等你来并肩，看这万里河山"</p>
+     <div class="hero-cta">
+       <a href="#characters" class="btn btn-primary">走近人物</a>
+       <a href="#timeline" class="btn btn-outline">时间线</a>
+     </div>
+   </div>
+   <div class="scroll-indicator">
+     <span>SCROLL</span>
+     <div class="scroll-line"></div>
+   </div>
+ </section>
+
+ <!-- About -->
+ <section id="about" class="section section-ink">
+   <div class="container">
+     <div class="section-header reveal">
+       <span class="section-tag">A B O U T</span>
+       <h2 class="section-title">关于《麒麟》</h2>
+       <div class="divider"></div>
+     </div>
+     <div class="about-intro reveal">
+       <p>《麒麟》是桔子树创作的军旅题材经典小说，以中国人民解放军精锐特种部队"麒麟"为背景，讲述了夏明朗与陆臻从相遇到并肩作战的故事。小说以真实细腻的笔触描绘了军人的热血与担当，同时以动人的情感线打动了无数读者。</p>
+       <p>自出版以来，《麒麟》系列以五部正传构筑了一个宏大而真实的世界——这里有战场上的生死与共，有训练场上的铁血荣光，更有两个灵魂之间最深的理解与守护。十余年来，它已不仅仅是一部小说，而是许多读者心中关于信念、勇气与爱的精神图腾。</p>
+     </div>
+     <div class="about-books">
+       <div class="book-card reveal"><div class="book-num">VOL.01</div><div class="book-title">麒麟·正传</div><div class="book-sub">新兵入伍 · 初遇</div></div>
+       <div class="book-card reveal"><div class="book-num">VOL.02</div><div class="book-title">麒麟·燃烧</div><div class="book-sub">磨砺成长 · 信念</div></div>
+       <div class="book-card reveal"><div class="book-num">VOL.03</div><div class="book-title">麒麟·沸腾</div><div class="book-sub">战场淬炼 · 血性</div></div>
+       <div class="book-card reveal"><div class="book-num">VOL.04</div><div class="book-title">麒麟·终章</div><div class="book-sub">归宿 · 承诺</div></div>
+       <div class="book-card reveal"><div class="book-num">SP</div><div class="book-title">麒麟·番外</div><div class="book-sub">那些未讲述的故事</div></div>
+     </div>
+   </div>
+ </section>
+
+ <!-- Characters -->
+ <section id="characters" class="section section-dark">
+   <div class="container">
+     <div class="section-header reveal">
+       <span class="section-tag">C H A R A C T E R S</span>
+       <h2 class="section-title">人物志</h2>
+       <div class="divider"></div>
+       <p class="section-subtitle">他与他——截然不同，却又命中注定地并肩而立</p>
+     </div>
+   </div>
+   <div class="chars-grid">
+     <!-- 夏明朗 -->
+     <div class="char-card char-xml reveal">
+       <div class="char-visual">
+         <svg viewBox="0 0 100 120">
+           <circle cx="50" cy="30" r="18" stroke="currentColor" stroke-width="1.5" fill="none"/>
+           <path d="M25 65 Q50 55 75 65 L80 115 Q50 100 20 115 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+           <path d="M30 55 L15 45 M70 55 L85 45" stroke="currentColor" stroke-width="1.5"/>
+           <path d="M40 40 L40 50 M60 40 L60 50" stroke="currentColor" stroke-width="1"/>
+           <line x1="25" y1="70" x2="15" y2="80" stroke="currentColor" stroke-width="1.5"/>
+           <line x1="75" y1="70" x2="85" y2="80" stroke="currentColor" stroke-width="1.5"/>
+           <text x="50" y="8" text-anchor="middle" font-size="8" fill="currentColor">&#9733;</text>
+         </svg>
+       </div>
+       <h3>夏明朗</h3>
+       <div class="char-role">麒麟特种部队 队长 · 上校</div>
+       <div class="char-desc">
+         冷静、果敢、如山岳般可靠的男人。麒麟特种部队的灵魂人物，代号"阎王"。以严苛著称的他，在铁血外壳下藏着对战友最深的理解与守护。他是陆臻的最高指挥官，也是他生命中最坚定的存在。
+       </div>
+       <div class="char-quote">"在这里，你要记住——你的背后是祖国，你的左右是战友。"</div>
+       <div class="char-stats">
+         <div class="char-stat"><span>上校</span>军衔</div>
+         <div class="char-stat"><span>17年</span>军龄</div>
+         <div class="char-stat"><span>阎王</span>代号</div>
+       </div>
+     </div>
+
+     <!-- 陆臻 -->
+     <div class="char-card char-lz reveal">
+       <div class="char-visual">
+         <svg viewBox="0 0 100 120">
+           <circle cx="50" cy="30" r="18" stroke="currentColor" stroke-width="1.5" fill="none"/>
+           <path d="M25 65 Q50 55 75 65 L80 115 Q50 100 20 115 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+           <path d="M35 55 L25 48 M65 55 L75 48" stroke="currentColor" stroke-width="1.5"/>
+           <path d="M42 38 L42 50 M58 38 L58 50" stroke="currentColor" stroke-width="1"/>
+           <line x1="28" y1="68" x2="18" y2="80" stroke="currentColor" stroke-width="1.5"/>
+           <line x1="72" y1="68" x2="82" y2="80" stroke="currentColor" stroke-width="1.5"/>
+           <text x="50" y="8" text-anchor="middle" font-size="8" fill="currentColor">&#9824;</text>
+         </svg>
+       </div>
+       <h3>陆臻</h3>
+       <div class="char-role">麒麟特种部队 狙击手 · 中校</div>
+       <div class="char-desc">
+          聪明、坚韧、内心温柔如水的战士。天之骄子却选择踏上最艰难的路。从初入军营的书生到顶尖狙击手，他用行动证明了自己的选择。在冷酷战场与温暖内心之间，他找到了属于自己的平衡，也找到了那个值得交付后背的人。
+       </div>
+       <div class="char-quote">"我选择的路，就算跪着也要走完。但我庆幸，这条路上有你。"</div>
+       <div class="char-stats">
+         <div class="char-stat"><span>中校</span>军衔</div>
+         <div class="char-stat"><span>12年</span>军龄</div>
+         <div class="char-stat"><span>神枪</span>代号</div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <!-- Timeline -->
+ <section id="timeline" class="section section-ink">
+   <div class="container">
+     <div class="section-header reveal">
+       <span class="section-tag">T I M E L I N E</span>
+       <h2 class="section-title">时间线</h2>
+       <div class="divider"></div>
+       <p class="section-subtitle">从初遇到并肩，走过的每一步都算数</p>
+     </div>
+   </div>
+   <div class="timeline">
+     <div class="tl-item reveal">
+       <div class="tl-dot"></div>
+       <div class="tl-content"><div class="tl-year">回 忆</div><div class="tl-title">夏明朗入伍</div><div class="tl-desc">十八岁的夏明朗告别家乡，踏入军营。从一开始就展现出过人的军事天赋和领导才能，在同期兵中脱颖而出，被选拔进入特种部队预备队。</div></div>
+     </div>
+     <div class="tl-item reveal">
+       <div class="tl-dot"></div>
+       <div class="tl-content"><div class="tl-year">回 忆</div><div class="tl-title">陆臻大学入伍</div><div class="tl-desc">陆臻以优异成绩从大学毕业后，出人意料地选择参军。这个被教官们称为"秀才"的新兵，用超乎想象的意志力和训练热情证明了自己。</div></div>
+     </div>
+     <div class="tl-item reveal">
+       <div class="tl-dot"></div>
+       <div class="tl-content"><div class="tl-year">初 遇</div><div class="tl-title">麒麟选拔相识</div><div class="tl-desc">陆臻参加麒麟特种部队选拔，夏明朗作为考官之一。两人在严酷的选拔过程中第一次真正注意到对方——在各自身上看到了某种相似的光芒。</div></div>
+     </div>
+     <div class="tl-item reveal">
+       <div class="tl-dot"></div>
+       <div class="tl-content"><div class="tl-year">磨 合</div><div class="tl-title">成为战友</div><div class="tl-desc">陆臻正式加入麒麟，与夏明朗成为战友。在魔鬼般的训练和任务中，两人从长官与下属逐渐建立起真正的信任与默契。陆臻展现出超强的适应能力和战术天赋。</div></div>
+     </div>
+     <div class="tl-item reveal">
+       <div class="tl-dot"></div>
+       <div class="tl-content"><div class="tl-year">同 行</div><div class="tl-title">并肩作战</div><div class="tl-desc">经过多次任务磨砺，陆臻成长为麒麟最优秀的狙击手之一。他与夏明朗的配合越来越默契，成为麒麟的王牌组合。在一次重大反恐行动中，两人联手完成了不可能的任务。</div></div>
+     </div>
+     <div class="tl-item reveal">
+       <div class="tl-dot"></div>
+       <div class="tl-content"><div class="tl-year">考 验</div><div class="tl-title">生死试炼</div><div class="tl-desc">一次高危任务中，陆臻为掩护队友身负重伤。夏明朗在绝境中做出艰难抉择，最终率队完成任务并将所有人安全带回家。这次经历让两人的羁绊更加深刻。</div></div>
+     </div>
+     <div class="tl-item reveal">
+       <div class="tl-dot"></div>
+       <div class="tl-content"><div class="tl-year">传 承</div><div class="tl-title">新的篇章</div><div class="tl-desc">陆臻晋升为麒麟的核心骨干，开始肩负起培养新一代特种兵的重任。夏明朗依然是那个如山一样的队长，但看向他的目光中，多了几分只有他们才懂的意味。</div></div>
+     </div>
+   </div>
+ </section>
+
+ <!-- Ranks -->
+ <section id="ranks" class="section section-dark">
+   <div class="container">
+     <div class="section-header reveal">
+       <span class="section-tag">R A N K S</span>
+       <h2 class="section-title">军衔晋升之路</h2>
+       <div class="divider"></div>
+       <p class="section-subtitle">从士兵到军官，每一步都是用血与汗换来的荣耀</p>
+     </div>
+   </div>
+   <div class="ranks-grid">
+     <div class="rank-col rank-xml reveal">
+       <h4>夏明朗 · 晋升历程</h4>
+       <div class="rank-item"><span class="rank-order">01</span><span class="rank-title">列兵</span><span class="rank-period">入伍</span></div>
+       <div class="rank-item"><span class="rank-order">02</span><span class="rank-title">士官</span><span class="rank-period">特战选拔</span></div>
+       <div class="rank-item"><span class="rank-order">03</span><span class="rank-title">少尉</span><span class="rank-period">麒麟预备</span></div>
+       <div class="rank-item"><span class="rank-order">04</span><span class="rank-title">中尉</span><span class="rank-period">正式入队</span></div>
+       <div class="rank-item"><span class="rank-order">05</span><span class="rank-title">上尉</span><span class="rank-period">组长</span></div>
+       <div class="rank-item"><span class="rank-order">06</span><span class="rank-title">少校</span><span class="rank-period">副队长</span></div>
+       <div class="rank-item"><span class="rank-order">07</span><span class="rank-title">中校</span><span class="rank-period">麒麟队长</span></div>
+       <div class="rank-item"><span class="rank-order">08</span><span class="rank-title">上校</span><span class="rank-period">大队长</span></div>
+     </div>
+     <div class="rank-col rank-lz reveal">
+       <h4>陆臻 · 晋升历程</h4>
+       <div class="rank-item"><span class="rank-order">01</span><span class="rank-title">列兵</span><span class="rank-period">大学入伍</span></div>
+       <div class="rank-item"><span class="rank-order">02</span><span class="rank-title">上等兵</span><span class="rank-period">新兵连</span></div>
+       <div class="rank-item"><span class="rank-order">03</span><span class="rank-title">士官</span><span class="rank-period">侦察兵</span></div>
+       <div class="rank-item"><span class="rank-order">04</span><span class="rank-title">少尉</span><span class="rank-period">麒麟选拔</span></div>
+       <div class="rank-item"><span class="rank-order">05</span><span class="rank-title">中尉</span><span class="rank-period">麒麟狙击手</span></div>
+       <div class="rank-item"><span class="rank-order">06</span><span class="rank-title">上尉</span><span class="rank-period">主力狙击手</span></div>
+       <div class="rank-item"><span class="rank-order">07</span><span class="rank-title">少校</span><span class="rank-period">狙击组长</span></div>
+       <div class="rank-item"><span class="rank-order">08</span><span class="rank-title">中校</span><span class="rank-period">麒麟核心</span></div>
+     </div>
+   </div>
+ </section>
+
+ <!-- Achievements -->
+ <section id="achievements" class="section section-ink">
+   <div class="container">
+     <div class="section-header reveal">
+       <span class="section-tag">A C H I E V E</span>
+       <h2 class="section-title">经典事迹</h2>
+       <div class="divider"></div>
+       <p class="section-subtitle">那些写入麒麟史册的时刻</p>
+     </div>
+     <div class="achieve-grid">
+       <div class="achieve-card reveal"><div class="achieve-num">01</div><h4>丛林反恐行动</h4><p>夏明朗率麒麟小队深入丛林，在极端环境下执行反恐清剿任务。陆臻以超远距离狙击精准命中敌首，为行动奠定胜局。</p></div>
+       <div class="achieve-card reveal"><div class="achieve-num">02</div><h4>人质救援任务</h4><p>代号"破晓"的人质救援行动。麒麟突击队在72小时内完成情报收集、渗透突袭、安全撤离全流程，零伤亡解救全部人质。</p></div>
+       <div class="achieve-card reveal"><div class="achieve-num">03</div><h4>边境反恐清剿</h4><p>在边境地区的持续反恐行动中，麒麟部队展现出超强的战术素养和团队协作能力。陆臻的狙击阵地更是被载入特战教材。</p></div>
+       <div class="achieve-card reveal"><div class="achieve-num">04</div><h4>国际联合演习</h4><p>代表中国特种部队参加国际联合军演，麒麟在全地形作战、城市反恐等科目中表现优异，赢得国际同行的高度评价。</p></div>
+     </div>
+   </div>
+ </section>
+
+ <!-- Gallery -->
+ <section id="gallery" class="section section-dark">
+   <div class="container">
+     <div class="section-header reveal">
+       <span class="section-tag">G A L L E R Y</span>
+       <h2 class="section-title">同人图集</h2>
+       <div class="divider"></div>
+       <p class="section-subtitle">献给夏明朗与陆臻 —— 致敬那一份铁血与温柔</p>
+     </div>
+     <div class="gallery-grid">
+       <div class="gallery-item reveal">
+         <div class="gallery-vis"><canvas id="art-xml"></canvas></div>
+         <div class="gallery-overlay"><h4>夏明朗 · 如山</h4><p>麒麟之魂，铁骨柔情</p></div>
+       </div>
+       <div class="gallery-item reveal">
+         <div class="gallery-vis"><canvas id="art-lz"></canvas></div>
+         <div class="gallery-overlay"><h4>陆臻 · 如水</h4><p>以柔克刚，百炼成钢</p></div>
+       </div>
+       <div class="gallery-item reveal">
+         <div class="gallery-vis"><canvas id="art-xml2"></canvas></div>
+         <div class="gallery-overlay"><h4>夏明朗 · 将魂</h4><p>令行禁止，一字千钧</p></div>
+       </div>
+       <div class="gallery-item reveal">
+         <div class="gallery-vis"><canvas id="art-lz2"></canvas></div>
+         <div class="gallery-overlay"><h4>陆臻 · 狙锋</h4><p>千里之外，一枪定乾坤</p></div>
+       </div>
+       <div class="gallery-item reveal">
+         <div class="gallery-vis"><canvas id="art-duo"></canvas></div>
+         <div class="gallery-overlay"><h4>并肩 · 麒麟双子</h4><p>一左一右，便是天下</p></div>
+       </div>
+       <div class="gallery-item reveal">
+         <div class="gallery-vis"><canvas id="art-xml3"></canvas></div>
+         <div class="gallery-overlay"><h4>夏明朗 · 指令</h4><p>我在这里，就是命令</p></div>
+       </div>
+       <div class="gallery-item reveal">
+         <div class="gallery-vis"><canvas id="art-lz3"></canvas></div>
+         <div class="gallery-overlay"><h4>陆臻 · 瞄准</h4><p>透过瞄准镜，我看见的只有你</p></div>
+       </div>
+       <div class="gallery-item reveal">
+         <div class="gallery-vis"><canvas id="art-team"></canvas></div>
+         <div class="gallery-overlay"><h4>麒麟 · 群像</h4><p>我们是一个整体</p></div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <!-- Footer -->
+ <footer id="footer">
+   <div class="container">
+     <div class="footer-title">麒麟</div>
+     <p class="footer-text">献给桔子树和所有热爱《麒麟》的读者</p>
+     <p class="footer-meta">粉丝纪念站 · 愿麒麟精神永存</p>
+   </div>
+ </footer>
+
+ <script type="module" src="js/script.js"></script>
+ </body>
+ </html>
